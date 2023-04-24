@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Nama="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="OrgChart.js"></script>
+</head>
+<body>
+    <div id="tree"></div>
+
+    <script>
+        var chart = new OrgChart(document.getElementById("tree"), {
+            template: "ana",
+            nodeBinding: {
+                field_0: "Nama"
+            },
+            nodes: [
+                { id: 1, Nama: "Karso Dimejo" },
+                { id: 2, pid: 1, tags:['partner'], Nama: "Marsinah"  },
+                { id: 3, pid: 1, Nama: "Lasmi"},
+                { id: 4, pid: 1, Nama: "Mangun" },
+                { id: 5, pid: 1, Nama: "Sukidi" },
+                { id: 6, pid: 1, Nama: "Suryat" },
+                { id: 7, pid: 1, Nama: "Sunari" },
+                { id: 8, pid: 1, Nama: "Tumiran" },
+                { id: 9, pid: 1, Nama: "Kasini" },
+                { id: 10, pid: 1, Nama: "Amirah" },
+
+                { id: 11, pid: 10, Nama: "Kasmiati" },
+                { id: 12, pid: 11, tags: ['partner'], Nama: "Supasrah" },
+                { id: 13, pid: 10, Nama: "Adi Karnoto" },
+                { id: 14, pid: 10, Nama: "Kusnarto Adi" },
+                { id: 15, pid: 10, Nama: "Sri Lestari" },
+                { id: 16, pid: 10, Nama: "Kusmi Harweni" },
+                { id: 17, pid: 10, Nama: "Adi Wismono" },
+
+                { id: 18, pid: 11, Nama: "Sri Wahyu" },
+                { id: 19, pid: 11, Nama: "Dwi" },
+                { id: 20, pid: 11, Nama: "Tri" },
+                { id: 21, pid: 11, Nama: "Endah" },
+                
+                { id: 22, pid: 13, Nama: "Bima" },
+                { id: 23, pid: 13, Nama: "Gandes" },
+
+                { id: 24, pid: 14, Nama: "Adiv" },
+                { id: 25, pid: 14, Nama: "Puput" },
+
+                { id: 26, pid: 15, Nama: "Bagus" },
+                { id: 27, pid: 15, Nama: "Ayu" },
+
+                { id: 28, pid: 16, Nama: "Iman" },
+                { id: 29, pid: 16, Nama: "Aripin" },
+                { id: 30, pid: 16, Nama: "Iqbal" },
+
+                { id: 31, pid: 17, Nama: "Vivin" },
+                { id: 32, pid: 17, Nama: "Fika" },
+
+                { id: 33, pid: 18, Nama: "Dana" },
+                { id: 34, pid: 18, Nama: "Rama" },
+                { id: 35, pid: 18, Nama: "Arga" },
+
+                { id: 36, pid: 19, Nama: "Afa" },
+
+                { id: 37, pid: 20, Nama: "Tristan" },
+            ]
+        });
+    </script> 
+</body>
+</html>
