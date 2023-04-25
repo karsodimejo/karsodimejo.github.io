@@ -1,38 +1,102 @@
 [
   {
     "id": 1,
+    "Nama": "Karso Dimejo",
+    "Trah": "-"
+  },
+  {
+    "id": 2,
+    "Nama": "Marsinah",
+    "Trah": "-",
+    "pid": 1,
+    "tags": [
+      "partner"
+    ]
+  },
+  {
+    "id": 3,
+    "Nama": "Lasmi",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 4,
+    "Nama": "Mangun",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 5,
+    "Nama": "Sukidi",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 6,
+    "Nama": "Suryat",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 7,
+    "Nama": "Sunari",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 8,
+    "Nama": "Tumiran",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 9,
+    "Nama": "Kasini",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 10,
+    "Nama": "Amirah",
+    "Trah": "Anak",
+    "pid": 1
+  },
+  {
+    "id": 11,
     "Nama": "Mokhammad Ariefin",
     "Trah": "Putu"
   },
   {
-    "id": 2,
+    "id": 12,
     "Nama": "Endah Catur Kusumastuti",
     "Trah": "Buyut"
   },
   {
-    "id": 3,
+    "id": 13,
     "Nama": "Kusnarto Adi",
-    "Trah": "Putu"
+    "Trah": "Putu",
+    "pid": 10
   },
   {
-    "id": 4,
+    "id": 14,
     "Nama": "Gamaliel Widhi Pradana",
     "Trah": "Canggah"
   },
   {
-    "id": 5,
+    "id": 15,
     "Nama": "Invansih",
-    "Trah": "Putu"
+    "Trah": "Putu",
+    "pid": 10
   },
   {
-    "id": 6,
+    "id": 16,
     "Nama": "Elminawati Sutomo",
     "Trah": "Buyut"
   },
   {
-    "id": 7,
+    "id": 17,
     "Nama": "Simbi Bilbina Ahzami",
     "Trah": "Canggah",
-    "pid": 6
+    "pid": 16
   }
 ]
