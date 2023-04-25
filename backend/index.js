@@ -72,7 +72,7 @@ function GetTableFromExcel(data) {
         parentArray = [parentArray[0].trim(), parentArray[1].trim()];
         rawData.push({
             id: index + 1 + pillar.length,
-            name: toCamelCase(element["Masukkan nama lengkap anda"]),
+            name: toCamelCase(element["Masukkan nama lengkap anda"]).trim(),
             breed: element["Pilih trah keturunan anda"],
             parent: parentArray
         });
