@@ -91,12 +91,25 @@
   {
     "id": 16,
     "Nama": "Elminawati Sutomo",
-    "Trah": "Buyut"
+    "Trah": "Buyut",
+    "pid": 19
   },
   {
     "id": 17,
     "Nama": "Simbi Bilbina Ahzami",
     "Trah": "Canggah",
     "pid": 16
+  },
+  {
+    "id": 18,
+    "Nama": "Etis Amilia",
+    "Trah": "Buyut",
+    "pid" : 19
+  },
+  {
+    "id": 19,
+    "Nama": "Sutomo (alm) ",
+    "Trah": "Putu",
+    "pid": 5
   }
 ]
