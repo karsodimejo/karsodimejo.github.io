@@ -82,13 +82,8 @@ function GetTableFromExcel(data) {
         let parentId = undefined;
         let tags = undefined;
         rawData.every(getElement => {
-            // menentukan id orang tua
-            if (element.parent[0] == getElement.name) {
-                parentId = getElement.id;
-                return false;
-            }
             // menentukan id suami/istri
-            else if (element.name == getElement.parent[1]) {
+            if (element.name == getElement.parent[1]) {
                 rawData.every(elementParent => {
                     if (getElement.parent[0] == elementParent.name) {
                         parentId = elementParent.id;
@@ -97,6 +92,11 @@ function GetTableFromExcel(data) {
                     }
                     return true;
                 });
+                return false;
+            }
+            // menentukan id orang tua
+            else if (element.parent[0] == getElement.name) {
+                parentId = getElement.id;
                 return false;
             }
 
