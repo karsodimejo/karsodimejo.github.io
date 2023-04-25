@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "Nama": "Mokhammad Ariefin",
+    "Trah": "Putu"
+  },
+  {
+    "id": 2,
+    "Nama": "Endah Catur Kusumastuti",
+    "Trah": "Buyut"
+  },
+  {
+    "id": 3,
+    "Nama": "Kusnarto Adi",
+    "Trah": "Putu"
+  },
+  {
+    "id": 4,
+    "Nama": "Gamaliel Widhi Pradana",
+    "Trah": "Canggah"
+  },
+  {
+    "id": 5,
+    "Nama": "Invansih",
+    "Trah": "Putu"
+  },
+  {
+    "id": 6,
+    "Nama": "Elminawati Sutomo",
+    "Trah": "Buyut"
+  },
+  {
+    "id": 7,
+    "Nama": "Simbi Bilbina Ahzami",
+    "Trah": "Canggah",
+    "pid": 6
+  }
+]
