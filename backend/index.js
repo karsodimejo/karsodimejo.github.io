@@ -106,12 +106,12 @@ function GetTableFromExcel(data) {
 
         if (parentId != undefined) newData.pid = parentId;
         if (tags != undefined) newData.tags = tags;
-        
+
         convertedData.push(newData);
       });
 
-    console.log(convertedData);
-    // exportJsonFile(convertedData, "silsilah.json");
+    // console.log(convertedData);
+    exportJsonFile(convertedData, "silsilah.json");
 }
 
 function exportJsonFile(data, filename) {
