@@ -66,9 +66,7 @@ function GetTableFromExcel(data) {
 
     excelRows.forEach((element, index) => {
         parentArray = toCamelCase(element["Anda merupakan anak dari pasangan"]).split('&');
-        if (parentArray[1] == undefined) {
-            parentArray[1] = "unknown";
-        }
+        parentArray[1] = parentArray[1] ? parentArray[1].trim() : "unknown";
         parentArray = [parentArray[0].trim(), parentArray[1].trim()];
         rawData.push({
             id: index + 1 + pillar.length,
@@ -78,44 +76,42 @@ function GetTableFromExcel(data) {
         });
     });
 
-    rawData.forEach((element, index) => {
+    rawData.forEach((element) => {
         let parentId = undefined;
         let tags = undefined;
-        rawData.every(getElement => {
-            // menentukan id suami/istri
-            if (element.name == getElement.parent[1]) {
-                rawData.every(elementParent => {
-                    if (getElement.parent[0] == elementParent.name) {
-                        parentId = elementParent.id;
-                        tags = ['partner'];
-                        return false;
-                    }
-                    return true;
-                });
-                return false;
+        rawData.some(getElement => {
+          // menentukan id suami/istri
+          if (element.name == getElement.parent[1]) {
+            const elementParent = rawData.find(parent => parent.name === getElement.parent[0]);
+            if (elementParent) {
+              parentId = elementParent.id;
+              tags = ['partner'];
+              return true;
             }
-            // menentukan id orang tua
-            else if (element.parent[0] == getElement.name) {
-                parentId = getElement.id;
-                return false;
-            }
-
+          }
+          // menentukan id orang tua
+          else if (element.parent[0] == getElement.name) {
+            parentId = getElement.id;
             return true;
+          }
+      
+          return false;
         });
+      
+        const newData = {
+          id: element.id,
+          Nama: element.name,
+          Trah: element.breed,
+        };
 
-        convertedData.push({
-            id: element.id,
-            Nama: element.name,
-            Trah: element.breed,
-        });
+        if (parentId != undefined) newData.pid = parentId;
+        if (tags != undefined) newData.tags = tags;
+        
+        convertedData.push(newData);
+      });
 
-        if (parentId != undefined) convertedData[index].pid = parentId;
-        if (tags != undefined) convertedData[index].tags = tags;
-
-    });
-
-    // console.log(convertedData);
-    exportJsonFile(convertedData, "silsilah.json");
+    console.log(convertedData);
+    // exportJsonFile(convertedData, "silsilah.json");
 }
 
 function exportJsonFile(data, filename) {
