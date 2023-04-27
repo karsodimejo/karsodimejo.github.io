@@ -64,7 +64,7 @@
   {
     "id": 11,
     "Nama": "Mokhammad Ariefin",
-    "Trah": "Putu"
+    "Trah": "Buyut"
   },
   {
     "id": 12,
@@ -86,7 +86,7 @@
     "id": 15,
     "Nama": "Invansih",
     "Trah": "Putu",
-    "pid": 10
+    "pid": 13
   },
   {
     "id": 16,
@@ -109,6 +109,37 @@
   {
     "id": 19,
     "Nama": "Sutomo (alm)",
+    "Trah": "Putu",
+    "pid": 5
+  },
+  {
+    "id": 20,
+    "Nama": "Heru Kuswanto",
+    "Trah": "Buyut"
+  },
+  {
+    "id": 21,
+    "Nama": "Heru Kuswanto",
+    "Trah": "Buyut"
+  },
+  {
+    "id": 22,
+    "Nama": "Yuni Aminatus Sholikhah",
+    "Trah": "Canggah"
+  },
+  {
+    "id": 23,
+    "Nama": "Sabilla Nuril Aulia",
+    "Trah": "Canggah"
+  },
+  {
+    "id": 24,
+    "Nama": "Ekke Dwinda Intaningtyas",
+    "Trah": "Canggah"
+  },
+  {
+    "id": 25,
+    "Nama": "Sudarti",
     "Trah": "Putu",
     "pid": 5
   }
